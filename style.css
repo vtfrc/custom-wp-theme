@@ -527,6 +527,20 @@ input[type="submit"]:hover {
 	margin-bottom: 0;
 }
 
+.page-id-55 .about-section {
+	padding: 0 4%;
+	margin-top: 2.5rem;
+}
+
+@media (max-width: 768px) {
+	.page-id-55 .wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__content {
+		padding: 0;
+	}
+	.page-id-55 .about-section {
+		padding: 0;
+	}
+}
+
 /* ! Footer
 ---------------------------------------------------------------------------*/
 .footer-first {

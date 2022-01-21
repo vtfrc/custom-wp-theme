@@ -1,0 +1,637 @@
+/*
+Theme Name: Vittorio Faraco
+Theme URI: https://vittoriofaraco.com
+Author: Vittorio Faraco
+Author URI: https://vittoriofaraco.com
+Description: Custom theme for VittorioFaraco.com
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: vittoriofaraco
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body,
+html {
+	background: #111;
+	font-size: 1em;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+ol,
+ul {
+	list-style-type: none;
+}
+img {
+	height: auto;
+}
+
+/* ! Base
+---------------------------------------------------------------------------*/
+body {
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul {
+	color: #fff;
+	margin-bottom: 20px;
+}
+p {
+	font-size: 1.125em;
+	line-height: 1.5;
+	color: #bbb;
+	margin-bottom: 1.5em;
+}
+a {
+	text-decoration: none;
+	color: #ff3314;
+}
+blockquote {
+	display: grid;
+	background: #333;
+	border-left: 5px solid #444;
+	padding: 20px;
+  margin: 0;
+  margin-bottom: 1.5em;
+}
+blockquote p {
+	color: #fff;
+	margin-bottom: 0;
+}
+blockquote cite {
+	color: #fff;
+	margin-top: 1.5em;
+}
+pre {
+  background: #333;
+  padding: 20px;
+  color: #bbb;
+  margin-bottom: 1.5em;
+  font-size: 1.125em;
+}
+
+h1 {
+	font-size: 3.75em;
+	line-height: 1;
+	font-weight: 800;
+}
+h2 {
+	font-size: 2.5em;
+	line-height: 1.3;
+	font-weight: 800;
+}
+h3 {
+	font-size: 1.875em;
+	line-height: 1.3;
+	font-weight: 700;
+}
+h4 {
+	font-size: 1.5625em;
+	line-height: 1.3;
+	font-weight: 700;
+}
+h5 {
+	font-size: 1.25em;
+	line-height: 1.3;
+	font-weight: 700;
+}
+h6 {
+	font-size: 0.9375em;
+	line-height: 1.3;
+	font-weight: 700;
+}
+
+.img-res {
+	width: 100%;
+	height: auto;
+}
+.mb1 {
+	margin-bottom: 20px;
+}
+.mb2 {
+	margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+		font-size: 1.75em;
+	}
+  h2 {
+		font-size: 1.625em;
+	}
+  h3 {
+		font-size: 1.5625em;
+	}
+}
+
+/* ! Layout
+---------------------------------------------------------------------------*/
+.container,
+article {
+	margin: 50px 10px;
+	padding: 10px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.single article {
+	padding: 0;
+}
+.single h2,h3 {
+	margin-top: 1.5em;
+}
+.single .container {
+	max-width: 800px;
+	margin-bottom: 50px;
+}
+
+.main-content {
+	flex: 1;
+	margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+	.main-content {
+		margin-bottom:50px;
+	}
+}
+
+/* ! Header
+---------------------------------------------------------------------------*/
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 60px;
+	background-color: #111;
+}
+.logo {
+	display: inline-block;
+}
+.logo img {
+	max-width: 48px;
+}
+
+.menu ul {
+	margin-bottom: 0;
+}
+.menu li {
+	display: inline-block;
+}
+.menu li a {
+	padding: 20px;
+	display: block;
+	color: #fff;
+	font-size: 1.125em;
+}
+.menu li a:hover {
+	color: #FFA294;
+}
+.menu li.evi a {
+	background: #ff3314;
+	color: #fff;
+	padding: 10px 20px;
+	margin-left: 20px;
+}
+
+.page-id-125 .header {
+	display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+		display: flex;
+		padding: 20px;
+	}
+  .logo {
+		margin-bottom: 20px;
+	}
+  .menu {
+		text-align: right;
+	}
+  .menu li {
+		display: block;
+	}
+  .menu li a {
+		padding: 5px 10px;
+	}
+  .menu li a:hover {
+		color: #FFA294;
+	}
+  .menu li.evi a {
+		background: none;
+		color: #ff3314;
+		padding: 5px 10px;
+	}
+}
+
+/* ! Hero
+---------------------------------------------------------------------------*/
+.hero {
+	background: #111;
+	padding: 20px;
+	text-align: left;
+}
+.hero h1 {
+	padding: 50px 10px;
+	color: #ff3314;
+	text-align: center;
+}
+.home .hero h1 {
+	font-family: 'PT Serif';
+	font-weight: bold;
+	padding: 50px 10px;
+	color: #fff;
+	text-align: left;
+}
+.logo img {
+	margin-bottom: -15px;
+}
+.single .hero {
+	display: none;
+}
+.home .hero {
+	padding: 150px;
+	min-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.home .hero h2 {
+	font-size: 1.375em;
+	margin-top: -65px;
+	padding: 0px 10px;
+	font-weight: 300;
+	color: #ff3314;
+	text-transform: uppercase;
+}
+.home .hero p {
+	padding: 0px 10px;
+}
+.home .hero a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.home .hero div {
+	margin-right: 50px;
+	vertical-align: middle;
+}
+.page-id-55 .hero {
+	display: none;
+}
+.page-id-125 .hero {
+	display: none;
+}
+
+@media (max-width: 768px) {
+  .hero {
+		padding: 0 20px;
+	}
+  .hero h1 {
+		padding-top: 60px;
+		padding-bottom: 0;
+	}
+  .home .hero {
+		min-height: 65vh;
+		padding: 40px;
+	}
+	.home .hero h1 {
+		font-size: 2.125em;
+		padding: 20px 10px;
+	}
+	.home .hero h2 {
+		margin-top: -25px;
+	}
+}
+
+/* ! Comments
+---------------------------------------------------------------------------*/
+.comments {
+	margin: 40px 0;
+}
+.commentlist,
+.commentlist .children {
+	list-style-type: none;
+}
+
+.commentlist p {
+	margin-top: 10px;
+}
+
+.comment-body {
+	margin: 40px 0;
+}
+.comment-author.vcard img {
+	border-radius: 100%;
+}
+
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label {
+	width: 100px;
+	display: inline-block;
+}
+
+/* ! Blocks
+---------------------------------------------------------------------------*/
+.panel-info {
+	margin-top: 30px;
+	text-align: center;
+}
+.panel-info .wp-block-media-text__media {
+	background: #222;
+	padding: 30px;
+	margin-bottom: 60px;
+}
+.panel-info .wp-block-media-text__media img {
+	margin-bottom: -60px;
+}
+
+.post-img {
+	background: #333;
+	padding: 30px;
+	margin-bottom: 60px;
+}
+.post-img img {
+	margin-bottom: -60px;
+}
+.single .post-img {
+	margin-bottom: 90px;
+}
+
+.wp-block-query .home-posts a {
+	color: #fff;
+	font-weight: 600;
+}
+.wp-block-query .home-posts h3 {
+	margin-top: 0;
+}
+.wp-block-query .home-posts p {
+	line-height: 1.5;
+}
+.wp-block-query .blog-posts a {
+	color: #ff3314;
+	font-weight: 600;
+}
+
+.page-id-55 .wp-image-296 {
+	margin-bottom: 30px;
+}
+
+input[type="text"] {
+	width: 100%;
+	margin: 10px 0;
+	border: none;
+	border-radius: 0;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 10px;
+	font-size: 1em;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+}
+input[type="email"] {
+	width: 100%;
+	margin: 10px 0;
+	border: none;
+	border-radius: 0;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 10px;
+	font-size: 1em;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+}
+textarea {
+	width: 100%;
+	margin: 10px 0;
+	border: none;
+	border-radius: 0;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 10px;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 1em;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+}
+input[type="submit"] {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	background-color: #ff3314;
+	padding: 10px 10px;
+	font-size: 1em;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+}
+input[type="submit"]:hover {
+	background-color: #D12208;
+}
+
+.mc4wp-form span {
+	color: #bbb;
+	font-size: 0.875em;
+}
+.mc4wp-form p {
+	margin-bottom: 0;
+}
+
+.single-newsletter {
+	background-color: #222;
+	margin-top: 50px;
+	padding: 20px;
+}
+
+.title-single-nl {
+	margin-top: 0;
+	font-size: 1.375em;
+	font-weight: 500;
+	color: #ff3314;
+}
+
+.related-posts {
+	background-color: #402E2B;
+	margin-top: 50px;
+	padding: 20px;
+}
+.title-related-posts {
+	margin-top: 0;
+	font-size: 1.375em;
+	font-weight: 500;
+}
+.related-title {
+	margin-bottom: 0;
+	color: #AA9794;
+}
+
+.work-card-title {
+	margin-top: 0;
+}
+.page-id-397 .wp-block-column {
+	padding: 30px;
+}
+.page-id-397 .wp-block-columns {
+	row-gap: 30px;
+}
+.page-id-397 .wp-block-media-text__content {
+	padding-top: 20px;
+}
+.page-id-397 .wp-block-media-text {
+	border: 1px solid #222;
+}
+.page-id-397 ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+.page-id-397 li {
+	margin-bottom: 5px;
+}
+.page-id-397 .menu li {
+	margin-bottom: 0;
+}
+
+/* ! Footer
+---------------------------------------------------------------------------*/
+.footer-first {
+	display: grid;
+	grid-template-columns: 50% auto auto;
+	grid-column-gap: 50px;
+	background: #222;
+	color: #aaa;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+.footer-first p {
+	margin-top: 20px;
+	font-size: 1em;
+}
+.footer-first strong {
+	display: block;
+	margin-bottom: 10px;
+}
+.footer-first a {
+	display: block;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+	.footer-first {
+		grid-template-columns: 1fr;
+	}
+}
+
+.footer-second {
+	background: #333;
+	color: #aaa;
+	padding: 30px;
+	text-align: center;
+}
+.page-id-125 .footer {
+	display: none;
+}
+
+#cookieChoiceInfo {
+	width: 65vw !important;
+	left: 17.5vw !important;
+	bottom: 20px !important;
+	top: auto !important;
+	padding: 10px !important;
+	text-align: center !important;
+	background-color: #1a1a1a !important;
+	color: #fff;
+	font-size: 14px;
+	line-height: 22px !important;
+}
+#cookieChoiceInfo span{
+	display: block;
+	padding-bottom: 10px;
+}
+#cookieChoiceInfo a{
+	background: #1a1a1a;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	padding: 4px 8px;
+	border-radius: 3px;
+  margin: 5px !important;
+	border-radius: 0;
+}
+#cookieChoiceInfo #cookieChoiceDismiss{
+	background: #ffc1b8;
+	color: #ff3314;
+}
+
+@media (max-width: 768px) {
+	#cookieChoiceInfo{
+		width: 90vw !important;
+		left: 5vw !important;
+		bottom: 20px !important;
+	}
+}
+
+/* ! Links page
+---------------------------------------------------------------------------*/
+.page-id-125 .container{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: 100%;
+}
+.page-id-125 article{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: 100%;
+}
+.page-id-125 .wp-block-cover{
+	min-height: 100vh;
+}
+.page-id-125 .wp-block-button__link{
+	background-color:rgba(255, 51, 20, 0.21) !important;
+	border: 1px solid #fff;
+}
+
+/* ! Animations
+---------------------------------------------------------------------------*/
+.animate__animated{
+	--animate-duration: 400ms;
+}

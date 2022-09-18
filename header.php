@@ -35,8 +35,8 @@
     <?php if(is_page($page='home')){ ?>
       <div class="hero-home-div animate__animated animate__fadeInUp">
         <h1><?php bloginfo('title'); ?></h1>
-        <h2>Tech consultant, web developer and data analyst</h2>
-        <p>Here I talk about innovation, growth and tech. Subscribe and get my free resources.</p>
+        <h2>Computer engineer-to-be and other things</h2>
+        <p>Here I talk about innovation, tech and pretty much anything. Subscribe to hear from me.</p>
         <a href="/newsletter"class="wp-block-button__link has-background no-border-radius" style="background-color:#ff3314">Subscribe</a>
       </div>
     <?php } ?>

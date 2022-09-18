@@ -1,4 +1,4 @@
-# VittorioFaraco.com Custom WordPress Theme
+# Custom WordPress Theme
 
 This is the custom WordPress theme I've developed and I've maintained for a while for my personal website.
 

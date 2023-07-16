@@ -6,4 +6,4 @@ I also used it as a basis for other projects, since it was built to be as minima
 
 That said, it could be further minimized, plus the new block themes caught my attention. I'm working on newer bases to use and I'll update my Github whenever they'll be ready.
 
-This theme is mainly composed of PHP, HTML and CSS, with almost no JS.
+This theme is written in PHP, HTML and CSS, with almost no JS.
